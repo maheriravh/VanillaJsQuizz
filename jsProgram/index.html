@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>TEST JS MAHERY LIEL-IT</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='design.css'>
+    
+</head>
+<body>
+
+    <h1>QUESTION A CHOIX MULTIPLE - TEST OKAIDI FAIT PAR MAHERY</h1>
+    <div class="row">
+        <div>Veuillez choisir le niveau</div>
+        <div>
+            <select id="id_choix_difficulte">
+                <option value="easy" >Facile</option>
+                <option value="medium">Moyen</option>
+                <option value="hard">Difficile</option>
+              </select>
+        </div>
+        <div><button onclick="fetchData()">VALIDER</button></div>
+    </div>
+
+    
+
+    <div class="container" id="id_question_container" style="display: none">
+        <div id="id_question"></div>
+        <div id="id_answer"></div>
+        <div class="navigation">
+            <button class="next" id="id_next_button">Suivant</button>
+        </div>
+        <div class="information" id="id_count_down"  style="display: block"></div>
+    </div>
+
+    <div class="alert" style="display: none" id="id_div_parent_alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <p id="id_message_alert"></p>
+    </div>
+
+    <div class="success" style="display: none" id="id_div_parent_success">
+        <span class="closebtn" onclick="onCloseSuccessMessage()">&times;</span>
+        <p id="id_message_success"></p>
+    </div>
+
+    <script src='script.js'></script>
+</body>
+</html>

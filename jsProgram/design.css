@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 20px;
+}
+
+.row, .container {
+    width: 100%;
+    max-width: 800px;
+    margin: 10px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.row div:first-child {
+    font-weight: bold;
+}
+
+select {
+    padding: 5px;
+    font-size: 1em;
+    width: 250px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.next {
+    margin-top: 10px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.row button {
+    margin: 0 auto;
+    display: block;
+}
+
+#id_question {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: left;
+    line-height: 1.5;
+}
+
+#id_answer {
+    margin: 10px 0;
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+  }
+
+.information {
+    padding: 20px;
+    background-color: #ffcc00;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.success {
+    padding: 20px;
+    background-color: #73f556;
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
